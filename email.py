@@ -1,6 +1,6 @@
 import re
 
-emailPattern = re.compile(r"[a-zA-Z]+@[a-zA-Z]+\.(com|net|org|edu)")
+emailPattern = re.compile(r"[a-zA-Z0-9.+-_]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+")
 with open('data.txt', 'r') as file:
     contents = file.read()
 
